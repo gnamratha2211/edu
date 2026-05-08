@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduInsight AI</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="topbar">
+
+        <h1>📘 EduInsight AI</h1>
+
+        <button onclick="toggleDarkMode()">
+            🌙 Toggle Dark Mode
+        </button>
+
+    </div>
+
+    <p>
+        AI-powered educational analytics platform
+    </p>
+
+    <div class="form">
+
+        <input type="text"
+        id="schoolName"
+        placeholder="School Name">
+
+        <input type="number"
+        id="attendance"
+        placeholder="Attendance %">
+
+        <input type="number"
+        id="performance"
+        placeholder="Performance %">
+
+        <input type="number"
+        id="teachers"
+        placeholder="Teacher Availability %">
+
+        <button onclick="analyzeSchool()">
+            Analyze School
+        </button>
+
+    </div>
+
+    <div id="result"></div>
+
+    <div class="chart-container">
+        <canvas id="schoolChart"></canvas>
+    </div>
+
+    <div class="ranking">
+
+        <h2>📈 School Ranking System</h2>
+
+        <table>
+
+            <tr>
+                <th>School</th>
+                <th>Score</th>
+            </tr>
+
+            <tr>
+                <td>Green Valley School</td>
+                <td>92</td>
+            </tr>
+
+            <tr>
+                <td>Sunrise Public School</td>
+                <td>84</td>
+            </tr>
+
+            <tr>
+                <td>Bright Future Academy</td>
+                <td>68</td>
+            </tr>
+
+        </table>
+
+    </div>
+
+    <div class="chatbot">
+
+        <h2>🤖 EduBot</h2>
+
+        <div id="chatbox">
+            Hello! Ask me about school performance.
+        </div>
+
+        <button onclick="chatbotReply()">
+            Ask AI
+        </button>
+
+    </div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
